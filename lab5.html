@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = "wrapper">
+        <div class= "grid-item title"> Lab 5</div>
+              
+
+        <div class= "grid-item header"> 
+          Infomation Request Form 
+        </div>
+
+        <div class= "grid-item sidebar"> 
+          <ul>
+            <li> <a href ="index.html"> Home </a> </li>
+     `      <li> <a href ="lab1.html"> Lab1     </a> </li>
+             <li> <a href = "lab2.html"> Lab2 </a> </li>
+             <li> <a href ="lab3.html"> Lab3</a></li>
+           <li> <a href ="lab4.html">Lab4</a></li>
+           <li> <a href = "lab5.html"> Lab 5</a></li>
+        </ul>
+
+        </div>
+
+        <div class= "grid-item content"> <p> Please enter your infomation </p>
+
+        <form action="/action_page.php">
+        <label for="firstname">Enter your First Name:</label>
+              <input type="firstname" id="firstname" name="firstname" required>
+
+              <label for="lastname">Enter your Last Name:</label>
+              <input type="lastname" id="lastname" name="lastname" required>
+        
+        <label for="lastname">Enter your email:</label>
+         E-mail: <input type="email" id="myEmail" name="usremail" required>
+
+        <p> <br> </p>
+        <label for="cars">Choose a state:</label>
+        <select name="state" id="state" required>
+          <option value="alabama">Alabama</option>
+          <option value="georgia">Georgia</option>
+          <option value="florida">Florida</option>
+        </select>
+
+        <p> <br> </p>
+
+        <label for ="status"> Marital Status</label>
+        <p> <br> </p>
+        <input type="radio" id="status" name="married" value="married">
+     <label for="married">Married</label>
+     <p> <br> </p>
+     <input type="radio" id="status" name="single" value="singled">
+     <label for="single">Single</label>
+     <p> <br> </p>
+     <input type="radio" id="status" name="divorced" value="divorced">
+     <label for="divorced">Diviorced</label>
+     <p> <br> </p>
+
+     <label for ="language">  Prefered Programing Language </label><br>
+     
+
+     <input type ="checkbox" id="language" name="html" value="html">
+     <label for="html"> HTML</label><br>
+     
+
+     <input type ="checkbox" id="language" name="java" value="java">
+     <label for="java"> Java</label><br>
+
+     <input type ="checkbox" id="language" name="python" value="python">
+     <label for="python"> Python</label>\
+     <p><br></p>
+
+     <label for="questions">Any questions about this form:</label>
+    <textarea id="questions" name="questions" rows="4" cols="40">Tell me about this form </textarea><br>
+
+    
+
+        <input type="submit">
+</form>
+        
+        
+              
+  
+          </form>
+          
+          
+           </div>
+
+        <div class= "grid-item footer">
+          <p> Webmaster: Tyvin Stevenson </p>
+          <p> Last Updated: </p>
+          <p id = "p1"></p>
+          <script> 
+          var today = new Date();
+          var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+          document.getElementById("p1").innerHTML =date;
+       </script>
+          
+         </div>
+    </div>
+
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
